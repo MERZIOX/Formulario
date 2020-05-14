@@ -56,22 +56,22 @@
       <th>Segundo nombre</th>
       <th>Primer apellido</th>
       <th>Segundo apellido</th>
-      <th>Contraseña</th>
       <th>Correo electronico</th>
+      <th>Contraseña</th>
       <th>Fecha</th>
-      <th>Genero</th>
       <th>Ciudad</th>
+      <th>Genero</th>
 
       <thead class="thead-light">
         <td><?php echo " $nombre1 " ?></td>
         <td><?php echo " $nombre2 " ?></td>
         <td><?php echo " $apellido1 " ?></td>
         <td><?php echo " $apellido2 " ?></td>
-        <td><?php echo " $pass1 " ?></td>
         <td><?php echo " $email " ?></td>
+        <td><?php echo " $pass1 " ?></td>
         <td><?php echo " $fecha " ?></td>
-        <td><?php echo " $genero " ?></td>
         <td><?php echo " $ciudad " ?></td>
+        <td><?php echo " $genero " ?></td>
         </tr>
         <hr>
         <div class="plex">

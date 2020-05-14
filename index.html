@@ -50,9 +50,9 @@
             <br>
 
             <div class="row" id="correo">
-                
+
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                     Ingresa tu correo electronico
+                    Ingresa tu correo electronico
                     <input class="form-control" type="email" name="correo" id="correo" placeholder="example@example.com"
                         required title="">
                 </div>
@@ -62,14 +62,14 @@
             <div class="row" id="contraseñas">
                 <div class="col-sm-2 col-md-6 col-lg-6">
                     Crea tu contraseña
-                    <input class="form-control" type="password" name="pass1" id="passw1" value="" placeholder="Contraseña"
-                        required pattern="[A-Za-z0-9!?-]{8,32}"
+                    <input class="form-control" type="password" name="pass1" id="passw1" value=""
+                        placeholder="Contraseña" required pattern="[A-Za-z0-9!?-]{8,32}"
                         title="Solo puedes usar de ocho a 32 digitos A-Z a-z 0-9">
                 </div>
                 <div class="col-sm-2 col-md-6 col-lg-6">
                     Repite tu contraseña
-                    <input class="form-control" type="password" name="pass2" id="passw2" value="" placeholder="Confirmar"
-                        required pattern="[A-Za-z0-9!?-]{8,32}"
+                    <input class="form-control" type="password" name="pass2" id="passw2" value=""
+                        placeholder="Confirmar" required pattern="[A-Za-z0-9!?-]{8,32}"
                         title="Solo puedes usar de ocho a 32 digitos A-Z a-z 0-9">
                 </div>
                 <div class="col-lg-1">
@@ -182,7 +182,8 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <a required class="enlace form-control" target="blank" href="terminos.html">Aceptar terminos y condiciones</a>
+                    <a required class="enlace form-control" target="blank" href="terminos.html">Aceptar terminos y
+                        condiciones</a>
 
                 </div>
             </div>
@@ -196,40 +197,43 @@
                 </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-6 ">
-                    <input id="btn-envio" name="enviar" class="btn-success form-control" type="button" value="Enviar formulario">
-                    
+                    <input id="btn-envio" name="enviar" class="btn-success form-control" type="submit"
+                        value="Enviar formulario">
+
                 </div>
             </div>
     </div>
 
 
-      </form>
+    </form>
     </div>
 
     </div>
 
-  
-<script>
-    $(document).ready(function () {
-        var passs1, passs2, form;
 
-        $('#btn-envio').click(function () {
-            
-            passs1 = $('#passw1').val();
-            passs2 = $('#passw2').val();
-            form = $('#formulario');
+    <script>
+        $(document).ready(function () {
+            var passs1, passs2, form;
 
-            if (passs1 == passs2) {
-                form.submit();
-            } else {
-                alert("Contraseña incorrecta, por favor verificar");
-            }
+            $('#btn-envio').click(function () {
+
+                passs1 = $('#passw1').val();
+                passs2 = $('#passw2').val();
+                form = $('#formulario');
+
+                if (passs1 == passs2 && passs1 != "" && passs2 != "" && form != "") {
+                    form.submit();
+                } else {
+
+                    alert("Contraseña incorrecta, por favor verificar");
+
+                }
 
 
-        })
-    }
-    );
-</script>
+            })
+        }
+        );
+    </script>
 
 
 </body>
