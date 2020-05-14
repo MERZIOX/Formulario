@@ -1,0 +1,27 @@
+#contenedor{
+    margin-top: 2%;
+    border: 2px solid whitesmoke;
+    width: 45%;
+}
+
+.inputizq{
+    margin-right: 5%;
+}
+
+#btn-envio{
+    margin-bottom: 10%;
+}
+
+#contenedor1{
+    width: 73%;
+    border: solid blue;
+}
+
+.enlace{
+    background-color: blue;
+    
+}
+
+body{
+    background-color: crimson;
+}

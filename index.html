@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registro </title>
+</head>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<body>
+    <div class="container-fluid" id="contenedor">
+
+        <h2 class="text-center">REGISTRO</h2>
+        <br>
+        <form action="formulario.php" method="post" class="validate" id="formulario">
+
+            <div class="row" id="nombres">
+                <div class="col-sm-auto col-md-6 col-lg-6">
+                    <input type="text" name="nombre1" class="inputizq form-control" placeholder="Primer nombre:"
+                        required
+                        pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"
+                        minlength="2" maxlength="32" title="Permitido solo letras A-Z a-z ">
+                </div>
+                <div class="col-sm-auto col-md-6 col-lg-6">
+                    <input type="text" name="nombre2" class="form-control" placeholder="Segundo nombre:"
+                        pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"
+                        minlength="2" maxlength="32" title="Permitido solo letras A-Z a-z "> <br>
+                </div>
+            </div>
+
+            <div class="row" id="pellidos">
+                <div class="col-sm-auto col-md-6 col-lg-6">
+                    <input type="text" name="apellido1" class="inputizq form-control" placeholder="Primer apellido:"
+                        required
+                        pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"
+                        minlength="2" maxlength="32" title="Permitido solo letras A-Z a-z ">
+                </div>
+                <div class="col-sm-auto col-md-6 col-lg-6">
+                    <input type="text" name="apellido2" class="form-control" placeholder="Segundo apellido:" required
+                        pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,32}"
+                        minlength="2" maxlength="32" title="Permitido solo letras A-Z a-z ">
+                </div>
+            </div>
+
+
+            <br>
+
+            <div class="row" id="correo">
+                
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                     Ingresa tu correo electronico
+                    <input class="form-control" type="email" name="correo" id="correo" placeholder="example@example.com"
+                        required title="">
+                </div>
+            </div>
+            <br>
+
+            <div class="row" id="contraseñas">
+                <div class="col-sm-2 col-md-6 col-lg-6">
+                    Crea tu contraseña
+                    <input class="form-control" type="password" name="pass1" id="passw1" value="" placeholder="Contraseña"
+                        required pattern="[A-Za-z0-9!?-]{8,32}"
+                        title="Solo puedes usar de ocho a 32 digitos A-Z a-z 0-9">
+                </div>
+                <div class="col-sm-2 col-md-6 col-lg-6">
+                    Repite tu contraseña
+                    <input class="form-control" type="password" name="pass2" id="passw2" value="" placeholder="Confirmar"
+                        required pattern="[A-Za-z0-9!?-]{8,32}"
+                        title="Solo puedes usar de ocho a 32 digitos A-Z a-z 0-9">
+                </div>
+                <div class="col-lg-1">
+                    <span id="error2"></span>
+                </div>
+
+
+            </div>
+            <br>
+
+            <div class="row" id="fecha-ciudad">
+                <div class="col-sm-12 col-md-3 col-lg-5">
+                    Fecha de nacimiento
+                    <input class="form-control" type="date" name="fecha" id="" required min="1920-01-01"
+                        max="2002-12-31">
+                </div>
+                <div class="col-sm col-md col-lg-6">
+                    Ciudad
+                    <select class="form-control" name="ciudad" id="">
+                        <option value="Ciudad" selected>Seleccionar</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Bogotá">Bogotá</option>
+                        <option value="Bucaramanga">Bucaramanga</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Cartagena de Indias">Cartagena de Indias</option>
+                        <option value="Florencia">Florencia</option>
+                        <option value="Ibagué">Ibagué</option>
+                        <option value="Inírida">Inírida</option>
+                        <option value="Leticia">Leticia</option>
+                        <option value="Manizales">Manizales</option>
+                        <option value="Medellín">Medellín</option>
+                        <option value="Mitú">Mitú</option>
+                        <option value="Mocoa">Mocoa</option>
+                        <option value="Montería">Montería</option>
+                        <option value="Neiva">Neiva</option>
+                        <option value="Pereira">Pereira</option>
+                        <option value="Popayán">Popayán</option>
+                        <option value="Puerto Carreño">Puerto Carreño</option>
+                        <option value="Quibdó">Quibdó</option>
+                        <option value="Riohacha">Riohacha</option>
+                        <option value="San Andrés">San Andrés</option>
+                        <option value="San José de Cúcuta">San José de Cúcuta</option>
+                        <option value="San José del Guaviare">San José del Guaviare</option>
+                        <option value="San Juan de Pasto">San Juan de Pasto</option>
+                        <option value="Santa Marta">Santa Marta</option>
+                        <option value="Sincelejo">Sincelejo</option>
+                        <option value="Tunja">Tunja</option>
+                        <option value="Valledupar">Valledupar</option>
+                        <option value="Villavicencio">Villavicencio</option>
+                        <option value="Yopal">Yopal</option>
+
+                    </select>
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <br>
+            Selecciona tu genero
+
+            <div class="row" id="genero">
+                <div class="col-lg-1">
+                    <input class="form-control" type="radio" name="genero" id="genfem" value="Femenino">
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <label class="form-control" for="genfem">Femenino</label>
+                </div>
+
+                <div class="col-lg-1">
+                    <input class="form-control" type="radio" name="genero" id="genmas" value="Masculino">
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <label class="form-control" for="genmas">Masculino</label>
+                </div>
+
+                <div class="col-lg-1">
+                    <input class="form-control" type="radio" name="genero" id="genno" value="otros">
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <label class="form-control" for="genno" id="genno">No decir</label>
+                </div>
+
+
+
+
+            </div>
+
+            <br>
+
+            <div class="row" id="terminos">
+
+                <div class="col-lg-1">
+                    <input class="form-control" type="checkbox" name="terminos" id="terminos">
+
+                </div>
+
+                <div class="col-lg-6">
+                    <a required class="enlace form-control" target="blank" href="terminos.html">Aceptar terminos y condiciones</a>
+
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row" id="btns">
+
+                <div class="col-sm-12 col-md-12 col-lg-6 ">
+                    <input id="btn-reset" class="btn-danger form-control" type="reset" value="Limpiar formulario">
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-6 ">
+                    <input id="btn-envio" name="enviar" class="btn-success form-control" type="button" value="Enviar formulario">
+                    
+                </div>
+            </div>
+    </div>
+
+
+      </form>
+    </div>
+
+    </div>
+
+  
+<script>
+    $(document).ready(function () {
+        var passs1, passs2, form;
+
+        $('#btn-envio').click(function () {
+            
+            passs1 = $('#passw1').val();
+            passs2 = $('#passw2').val();
+            form = $('#formulario');
+
+            if (passs1 == passs2) {
+                form.submit();
+            } else {
+                alert("Contraseña incorrecta, por favor verificar");
+            }
+
+
+        })
+    }
+    );
+</script>
+
+
+</body>
+
+</html>
